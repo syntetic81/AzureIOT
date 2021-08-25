@@ -1,4 +1,4 @@
-variable "subscription id" {
+variable "subscription_id" {
     description = "Subscription ID"
     type = string
     default = "a7847ccc-b9c4-4d95-8936-040dddfd84e6"  
