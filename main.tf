@@ -8,7 +8,7 @@
 # Create a resource group
 resource "azurerm_resource_group" "MMS_IOT_FO" {
   name     = "mms-iot-rg"
-  location = "North Central US"
+  location = "West Europe"
   tags = {
     test = "Frank_MMS"
   }
@@ -19,7 +19,7 @@ resource "azurerm_resource_group" "MMS_IOT_FO" {
 resource "azurerm_iothub" "mmsiothubfo" {
   name                = "mmsiothubfo"
   resource_group_name = azurerm_resource_group.MMS_IOT_FO.name
-  location            = "North Central US"
+  location            = "West Europe"
 
   sku {
     name     = "S1"
